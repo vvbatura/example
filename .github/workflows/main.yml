@@ -1,0 +1,21 @@
+name: Deploy Application
+on:
+  workflow_dispatch:
+jobs: 
+  run:
+    name: "tun hook"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run after hooks
+        uses: appleboy/ssh-action@master
+        env:
+          BASE_PATH: /var/www/html/crm-tenants/
+        with:
+          host: 185.233.119.194
+          username: root
+          key: lr7zzvTcJK9z
+          port: 22
+          envs: BASE_PATH
+          script: |
+            cd ${ BASE_PATH }
+            ls
