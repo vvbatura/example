@@ -13,7 +13,7 @@ jobs:
         with:
           host: 185.233.119.194
           username: root
-          key: ${{ sectrets.TEST_2}}
+          key: ${{ secrets.TEST_2}}
           port: 22
           envs: BASE_PATH
           script: |
