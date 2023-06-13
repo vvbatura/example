@@ -19,3 +19,5 @@ jobs:
           script: |
             cd /var/www/html/crm-tenants/
             ls
+            composer install
+            php artisan migrate
