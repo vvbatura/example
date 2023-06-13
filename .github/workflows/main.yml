@@ -17,5 +17,5 @@ jobs:
           port: 22
           envs: BASE_PATH
           script: |
-            cd ${{ BASE_PATH }}
+            cd /var/www/html/crm-tenants/
             ls
