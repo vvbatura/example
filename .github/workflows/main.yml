@@ -13,7 +13,7 @@ jobs:
         with:
           host: 185.233.119.194
           username: root
-          key: 12345678
+          key: test2
           port: 22
           envs: BASE_PATH
           script: |
